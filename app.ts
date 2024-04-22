@@ -41,6 +41,8 @@ const person = {
     role: Role.ADMIN,
 };
 
+/* let favoriteActivities: any[]; big disadvantage of typescript since it removes 
+most of the advantages of typescript since it accepts any kind of data  */
 let favoriteActivities: string[];
 favoriteActivities = ["Boxing 🥊"];
 
