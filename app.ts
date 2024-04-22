@@ -1,9 +1,12 @@
+// Can use custom type so we can reuse it on any variable
+type Combineable = number | string;
+type Conversion = "as-number" | "as-text";
 //  Use pipe for union types '|' if we expected two or more data types
 // Literal types are based on core types but with specific version: example(resultConversion)
 function combine(
-    input1: number | string,
-    input2: number | string,
-    resultConversion: "as-number" | "as-text"
+    input1: Combineable,
+    input2: Combineable,
+    resultConversion: Conversion
 ) {
     let result;
     if (
