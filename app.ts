@@ -7,11 +7,21 @@
 //     name: string;
 //     age: number;
 // } = {
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    // if type of data is identified, then tuple is recommended to help determine what kind of data is being handled
+    role: [number, string];
+} = {
     name: "Jeff",
     age: 24,
     hobbies: ["Beating my meat? 🥩", "Jogging 🏃‍♂️", "Video games 🎮"],
+    role: [1, "author"],
 };
+
+// person.role.push("admin");
+// person.role[0] = 10;
 
 let favoriteActivities: string[];
 favoriteActivities = ["Boxing 🥊"];
