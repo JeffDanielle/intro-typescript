@@ -10,6 +10,15 @@
 const person = {
     name: "Jeff",
     age: 24,
+    hobbies: ["Beating my meat? 🥩", "Jogging 🏃‍♂️", "Video games 🎮"],
 };
 
+let favoriteActivities: string[];
+favoriteActivities = ["Boxing 🥊"];
+
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+    // console.log(hobby.map()); !!! One of typescript advantage it let us know what is wrong.
+}
