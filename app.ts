@@ -1,4 +1,5 @@
-// Specify the types of the parameters/states to expect a specific data type
+// Specify the types of the parameters/variable to expect a specific data type
+// Key difference: JavaScript uses dynamic types resolved at run-time meanwhile TypeScript uses static types set during development
 const add = (num1: number, num2: number) => {
     return num1 + num2;
 };
