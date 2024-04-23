@@ -7,6 +7,13 @@ userInput = 5;
 userInput = "Max";
 // userName = userInput;
 
-// if (typeof userInput === "string") {
-//     userName = userInput;
-// }
+if (typeof userInput === "string") {
+    userName = userInput;
+}
+
+// never dataType, often used to throw an exception
+function generateError(message: string, code: number): never {
+    throw {message, errorCode: code};
+}
+
+generateError("An error occurred!", 500);
